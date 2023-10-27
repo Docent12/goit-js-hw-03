@@ -1,9 +1,10 @@
 
 "use strict";
-function normalizeInput(input, to) {
-  to = "upper" ? input.toUpperCase : input.toLowerCase;
-  return input;
-}
+const planets = ["Earth", "Mars", "Venus", "Venera", "Saturn", "Pluton"];
 
-
-console.log(normalizeInput("This ISN'T SpaM", "lower"));
+console.log(planets[1]);
+console.log(planets[0]);
+console.log(planets[2]);
+console.log(planets[3]);
+console.log(planets[1]);
+console.log(planets.length);

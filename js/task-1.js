@@ -1,10 +1,13 @@
 
 "use strict";
-const planets = ["Earth", "Mars", "Venus", "Venera", "Saturn", "Pluton"];
+function normalizeInput(input, to) {
+  to = "upper" ? input.toUpperCase : input.toLowerCaes;
+  return input;
+}
 
-console.log(planets[1]);
-console.log(planets[0]);
-console.log(planets[2]);
-console.log(planets[3]);
-console.log(planets[1]);
-console.log(planets.length);
+console.log(normalizeInput("This ISN'T SpaM", "lower")); // "this isn't spam");
+console.log(normalizeInput("This ISN'T SpaM", "upper")); // "THIS ISN'T SPAM");
+console.log(normalizeInput("Big SALE", "lower")); // "big sale";
+console.log(normalizeInput("Big SALE", "upper")) ;// "BIG SALE"
+ console.log(normalizeInput("Stay Awhile and Listen", "lower")); // "stay awhile and listen"
+  console.log(normalizeInput("Stay Awhile and Listen", "upper")); // "STAY AWHILE AND LISTEN");

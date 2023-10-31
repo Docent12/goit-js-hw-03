@@ -1,8 +1,10 @@
 
 "use strict";
 function normalizeInput(input, to) {
-  to = "upper" ? input.toUpperCase : input.toLowerCaes;
-  return input;
+    to == "upper"?console.log(input):console.log(to);;
+    console.log(input);
+
+
 }
 
 console.log(normalizeInput("This ISN'T SpaM", "lower")); // "this isn't spam");

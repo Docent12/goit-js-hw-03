@@ -1,8 +1,11 @@
 
 "use strict";
 function normalizeInput(input, to) {
-    to == "upper"?console.log(input):console.log(to);;
-    console.log(input);
+    to == "upper" ? input.toUpperCase() : input.toLowerCase();
+    console.log(to);
+    console.log(input.toUpperCase());
+
+    return ;
 
 
 }

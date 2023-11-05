@@ -1,18 +1,14 @@
 
 "use strict";
-function normalizeInput(input, to) {
-    to == "upper" ? input.toUpperCase() : input.toLowerCase();
-    console.log(to);
-    console.log(input.toUpperCase());
-
-    return ;
+function getLastElementMeta(array) {
 
 
+    array[0] = array.length - 1;
+    array[1] = array[array.length - 1];
+    return array;
 }
 
-console.log(normalizeInput("This ISN'T SpaM", "lower")); // "this isn't spam");
-console.log(normalizeInput("This ISN'T SpaM", "upper")); // "THIS ISN'T SPAM");
-console.log(normalizeInput("Big SALE", "lower")); // "big sale";
-console.log(normalizeInput("Big SALE", "upper")) ;// "BIG SALE"
- console.log(normalizeInput("Stay Awhile and Listen", "lower")); // "stay awhile and listen"
-  console.log(normalizeInput("Stay Awhile and Listen", "upper")); // "STAY AWHILE AND LISTEN");
+console.log(getLastElementMeta(['apple','peach','pear' ,'bananna']));
+console.log(getLastElementMeta(["apple", "peach", "pear"]));
+console.log(getLastElementMeta(["apple", "peach"]));
+console.log(getLastElementMeta(["apple"]));
